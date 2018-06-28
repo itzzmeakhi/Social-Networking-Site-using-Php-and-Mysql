@@ -1,0 +1,630 @@
+/*------------------------*/
+/* Imports the font style */
+/*------------------------*/ lll
+
+@font-face {
+	font-family: 'caveat-bold';
+	src: url('../fonts/caveat-bold.ttf');
+}
+
+@font-face {
+	font-family: 'caveat-regular';
+	src: url('../fonts/caveat-regular.ttf');
+}
+
+@font-face {
+	font-family: 'caveatbrush-regular';
+	src: url('../fonts/caveatbrush-regular.ttf');
+}
+
+/*--------------------*/
+/* Common properties */
+/*-------------------*/
+
+* {
+	font-family: 'caveat-regular', Monospace;
+	font-size: 20px;
+	letter-spacing: 2px;
+	word-spacing: 3px;
+}
+
+body {
+	line-height: 17px;
+	background-color: #dfe6e9;
+}
+
+/*--------------------*/
+/* Navbar properties */
+/*-------------------*/
+
+.top_bar {
+	width: 100%;
+	min-width: 1050px;
+	height: 60px;
+	background-color: #0a3d62;
+	box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+	margin-bottom: 15px;
+	display: inline-flex;
+	position: fixed;
+	z-index: 9998;
+}
+
+.logo h2 {
+	color: #fff;
+	margin-top: 10px;
+	right: -70%;
+    position: relative;
+    padding: 2%;
+    border: 2px solid #fff;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	line-height: 40px;
+}
+
+nav {
+	float: right;
+	right: 1px;
+	position: absolute;
+	margin: 18px;
+}
+
+nav a{
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 2px;
+	font-size: 118%;
+}
+
+nav a:hover {
+	border-bottom: 4px solid #fff;
+	text-decoration: none;
+	color: #fff;
+}
+
+/*---------------------*/
+/* Wrapper properties */
+/*--------------------*/
+
+.wrapper {
+	margin: 0 auto;
+	top: 70px;
+	position: relative;
+	padding: 0 10px;
+	width: 75%;
+	min-width: 950px;
+}
+
+/*-------------------------*/
+/* User Details properties */
+/*------------------------*/
+
+.column {
+	background-color: #fff;
+	padding: 15px;
+	border: 2px solid #dfe6e9;
+	border-radius: 5px;
+	box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.75);
+	z-index: -1;
+	color: #555;
+}
+
+.user_details {
+	width: 265px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.user_details img {
+	margin-right: 5px;
+	border-radius: 5px;
+	height: 125px;
+}
+
+.user_details_left_right {
+	display: inline-block;
+	position: absolute;
+	width: 125px;
+	font-size: 115%;
+	letter-spacing: 2px;
+	line-height: 30px;
+}
+
+.user_details_left_right a {
+	text-decoration: none;
+}
+
+/*-------------------------------------*/
+/* News feed - main_column properties */
+/*-----------------------------------*/
+
+.main_column {
+	float:right;
+	width: 70%;
+	z-index: -1;
+	min-height: 170px;
+}
+
+/*----------------------------------*/
+/* Index page post form properties */
+/*---------------------------------*/
+
+.post_form {
+	width: 100%;
+}
+
+.post_form textarea {
+	width: 81%;
+	height: 60px;
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-right: 5px;
+	border: 1px solid #dfe6e9;
+	font-family: 'caveatbrush-regular', Monospace;
+	font-size: 130%;
+	letter-spacing: 4px;
+	word-spacing: 3px;
+	padding: 2%;
+	outline: 0;
+	box-shadow: none;
+}
+
+textarea:focus {
+	outline: 0;
+}
+
+.post_form input[type="submit"] {
+	background-color: #0a3d62;
+	color: #fff;
+	font-family: 'caveat-regular', Monospace;
+	font-size: 110%;
+	letter-spacing: 3px;
+	padding: 2%;
+	width: 12%;
+	top: -16px;
+	border: transparent;
+	border-radius: 5px;
+	outline: 0;
+	position: relative;
+
+}
+
+.post_form input[type="submit"]:active {
+	padding: 5px 4px 4px 5px;
+}
+
+/*---------------------------------*/
+/* Index page newsfeed properties */
+/*--------------------------------*/
+
+.status_post {
+	width: 96%;
+	font-size: 60%;
+	padding: 0px 5px;
+	min-height: 75px;
+	letter-spacing: 3px;
+	word-spacing: 2px;
+	cursor:pointer;
+}
+
+.post_profile_pic {
+	float: left;
+	margin-right: 12px;
+}
+
+.post_profile_pic img {
+	border-radius: 5px;
+}
+
+.status_post a {
+	text-decoration: none;
+}
+
+/*-------------------------------------*/
+/* Like and Unlike section properties */
+/*-----------------------------------*/
+
+.newsfeedPostOptions {
+	padding: 0px;
+	text-decoration: none;
+	color:#20AAE5;
+	border:none;
+}
+
+.newsfeedPostOptions iframe {
+	border: 0px;
+	height: 50px;
+	width: 100%;
+}
+
+.comment_like {
+	background-color: transparent;
+	border: none;
+	font-size: 110%;
+	color: #3498db;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 10px;
+}
+
+.like_value {
+	display: inline;
+	font-size: 100%;
+}
+
+/*--------------------------*/
+/* Profile page properties */
+/*-------------------------*/
+
+.profile_left {
+	top: -10px;
+	width: 17%;
+	max-width: 240px;
+	min-width: 130px;
+	height: 100%;
+	float: left;
+	position: relative;
+	background-color: #bac9d4;
+	border: none;
+	color: #fff;
+	margin-right: 20px;
+	padding-top: 4%;
+	box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+}
+
+.profile_left img {
+	min-width: 80px;
+	width: 55%;
+	margin: 20px;
+	border: 5px solid #0a3d62;
+	border-radius: 100px;
+}
+
+.profile_info {
+	display: list-item;
+	background-color: #0a3d62;
+	width: 100%;
+	padding: 10px 0 10px 0;
+}
+
+.profile_info p {
+	margin: 0 0 0 20px;
+	word-wrap: break-word;
+	letter-spacing: 3px;
+}
+
+/*------------------------------------------*/
+/* Profile page requests button properties */
+/*----------------------------------------*/
+
+.danger {
+	background-color: #eb2f06;
+}
+
+.warning {
+	background-color: #e55039;
+}
+
+.default {
+	background-color: #3c6382;
+}
+
+.success {
+	background-color: #44bd32;
+}
+
+.info {
+	background-color: #0a3d62;
+}
+
+.blue {
+	background-color: #0a3d62;
+}
+
+.profile_left input[type="submit"] {
+	width: 90%;
+	height: 30px;
+	border-radius: 5px;
+	margin: 7px 0 0 7px;
+	border: none;
+	color: #fff;
+	font-family: 'caveat-regular',Monospace;
+	letter-spacing: 2px;
+	font-size: 100%;
+	outline: 0;
+}
+
+/*------------------------------------------*/
+/* Friend requests page button properties */
+/*----------------------------------------*/
+
+
+#accept_button {
+	width: 20%;
+	height: 28px;
+	border-radius: 5px;
+	margin: 8px;
+	border: none;
+	color: #fff;
+	background-color: #2ecc71;
+}
+
+#ignore_button {
+	width: 20%;
+	height: 28px;
+	border-radius: 5px;
+	margin: 8px;
+	border: none;
+	color: #fff;
+	background-color: #e74c3c;
+}
+
+/*-----------------------------------*/
+/* Profile page newsfeed properties */
+/*---------------------------------*/
+
+.delete_button {
+	height: 25px;
+	width: auto;
+	padding: 1%;
+	border: none;
+	float: right;
+	border-radius: 4px;
+	right: -15px;
+	position: relative;
+}
+
+.profile_main_column {
+	min-width: 675px;
+	float: left;
+	width: 70%;
+	z-index: -1;
+
+}
+
+.profile_info_bottom {
+	margin: 10 0 0 7px;
+	margin-top: 15px;
+	color: #0a3d62;
+}
+
+/*-----------------------------------*/
+/* Message page newsfeed properties */
+/*---------------------------------*/
+
+#message_textarea {
+	width: 80%;
+	margin-right: 8px;
+	border-radius: 5px;
+	border: 1px solid #D3D3D3;
+	font-size: 100%;
+	letter-spacing: 3px;
+}
+
+#message_submit {
+	height: 35px;
+	width: 100px;
+	margin: 0;
+	position: absolute;
+	border:none;
+	background-color: #0a3d62;
+	color: #fff;
+	border-radius: 5px;
+	font-family: 'caveat-regular',Monospace;
+	text-shadow: #73B6E2 0.5px 0.5px 0px;
+}
+
+.message {
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 5px 10px;
+	display: inline-block;
+	color: #fff;
+}
+
+.message#blue {
+	background-color: #6a97ba;
+	border-color: #6a97ba;
+	float: right;
+	margin-bottom: 5px;
+	color: #fff;
+}
+
+.message#green {
+	background-color: #29920e;
+	border-color: #29920e;
+	float: left;
+	margin-bottom: 5px;
+	color: #fff;
+}
+
+.loaded_messages {
+	height: 65%;
+	min-height: 300px;
+	max-height: 400px;
+	overflow: scroll;
+	margin-bottom: 10px;
+}
+
+.loaded_conversations {
+	max-height: 216px;
+	overflow: scroll;
+}
+
+.user_found_messages {
+	border-bottom: 1px solid #D3D3D3;
+	padding: 8px 8px 10px 8px;
+}
+
+.user_found_messages:hover {
+	background-color: #D3D3D3;
+}
+
+.user_found_messages img {
+	height: 35px;
+	float: left;
+}
+
+#grey {
+	color: #8C8C8C;
+}
+
+.resultDisplay {
+	padding: 5px 5px 0 5px;
+	height: 70px;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.resultDisplay a {
+	float: none;
+}
+
+.resultDisplay:hover {
+	background-color: #EBEBEB;
+	text-decoration: none;
+}
+
+.liveSearchProfilePic img {
+	height: 50px;
+	border-radius: 25px;
+	margin: 1px 12px 0 2px;
+	float: left;
+}
+
+.liveSearchText {
+	background-color: transparent;
+	color: #1E96CA;
+}
+
+.liveSearchText p{
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.tab-content {
+	margin-top: 25px;
+}
+
+/*---------------------------------------*/
+/* Index page search section properties */
+/*--------------------------------------*/
+
+.search {
+	margin: 16px 0 0 36%;
+
+}
+
+.search #search_text_input {
+	border: thin solid #E5E5E5;
+  	height: 23px;
+  	outline: 0;
+  	float: left;
+  	width: 100px;
+  	border-top-right-radius: 0;
+  	border-bottom-right-radius: 0;
+  	border-top-left-radius: 3px;
+  	border-bottom-left-radius: 3px;
+}
+
+.button_holder {
+	background-color: #F1F1F1;
+  	border: thin solid #e5e5e5;
+  	cursor: pointer;
+  	height: 23px;
+  	text-align: center;
+  	float: left;
+  	width: 50px;
+  	border-top-right-radius: 3px;
+  	border-bottom-right-radius: 3px;
+}
+
+.button_holder img {
+	margin-top: 1px;
+    width: 20px;
+}
+
+.search_results {
+	background-color: #fff;
+    border: 1px solid #DADADA;
+    border-bottom: none;
+    border-top: none;
+    margin-top: 21px;
+}
+
+.search_results_footer{
+	padding: 7px 4px 0px 4px;
+    height: 30px;
+    border: 1px solid #0a3d62;
+    border-top: none;
+    background-color: #0a3d62;
+    text-align: center;
+}
+
+.search_results_footer a {
+	color: #fff;
+}
+
+/*-----------------*/
+/* Search Results */
+/*---------------*/
+
+.search_result {
+	padding: 10px;
+    height: 100px;
+}
+
+.searchPageFriendButtons {
+	float: right;
+}
+
+.searchPageFriendButtons input[type="submit"] {
+	border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.result_profile_pic {
+	float: left;
+    margin-right: 10px;
+}
+
+#search_hr {
+	margin-bottom: 0px;
+}
+
+/*----------------*/
+/* Settings page */
+/*---------------*/
+
+.small_profile_pic {
+	height: 55px;
+    margin: 1px 12px 0 2px;
+    float: left;
+}
+
+#settings_input {
+	border: 1px solid #ccc;
+    height: 20px;
+    padding: 4px 6px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.settings_submit {
+	border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
